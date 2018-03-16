@@ -23,7 +23,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url']	= '';
+$config['appid'] = '';
+$config['adminid'] = '';
+$config['website_title'] = '';
+$config['db_name'] = '';
+$config['db_username'] = '';
+$config['db_password'] = '';
+$config['db_host'] = '';
+
+define('HTTP_CSS_PATH', $config['base_url'].'src/');
+define('HTTP_JS_PATH', $config['base_url'].'src/js/');
+define('HTTP_CSS_FRONT_PATH', $config['base_url'].'src/css/');
+define('HTTP_APP_IMG', $config['base_url'].'src/app_img/');
+
+/*Admin panel config file */
+define('HTTP_CSS_PATH_ADMIN', $config['base_url'].'src/admin/css/');
+define('HTTP_FONT_PATH_ADMIN', $config['base_url'].'src/admin/font/');
+define('HTTP_IMAGES_PATH_ADMIN', $config['base_url'].'src/admin/images/');
+define('HTTP_JS_PATH_ADMIN', $config['base_url'].'src/admin/js/');
+
+define('APPID', $config['appid']);
+define('ADMINID', $config['adminid']);
+define('WEBTITLE', $config['website_title']);
+
+/* Database details goes here */
+define('DB_NAME', $config['db_name']);
+define('DB_USERNAME', $config['db_username']);
+define('DB_PASSWORD', $config['db_password']);
+define('DB_HOST', $config['db_host']);
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +63,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -324,7 +352,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = '123@123#';
 
 /*
 |--------------------------------------------------------------------------
