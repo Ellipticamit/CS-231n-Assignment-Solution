@@ -9,4 +9,4 @@ Find course notes and assignments <a href="http://cs231n.stanford.edu/assignment
 
 ## Assignment 1
 
-Q1: k-Nearest Neighbor classifier (20 points) **done**
+**Q1: k-Nearest Neighbor classifier (20 points)** -- done
